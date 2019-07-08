@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>找回密码</title>
+<style type="text/css">
+.center {
+	margin-top: 5px;
+	border-top-width: 5px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+	padding-top: 10px;
+}
+div,body,span,a,p,input,ul,li,form{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+.top {
+	height:90px;
+	background-color: #2f86f6;
+}
+.top .top_left {
+	float: left;
+	margin-top: 20px;
+	margin-left: 100px;
+	display: inline-block;
+	width: 240px;
+}
+.top .top_right {
+	float: right;
+	display: inline-block;
+	margin-right: 50px;
+	margin-top: 32px;
+	text-align: center;
+}
+.top .top_left .left_text {
+	margin-top: 10px;
+	margin-right: 0px;
+	display: block;
+	float: right;
+	font-family: "仿宋";
+	color: #FFF;
+	font-size: 18px;
+	font-weight: bold;
+}
+.top .top_left .image {
+	text-align: center;
+	display: block;
+	float: left;
+}
+.top .top_right a {
+	font-family: "仿宋";
+	font-size: 18px;
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+.top .top_right a:hover{
+	text-decoration:underline;
+	color:#F00;
+}
+.center .input input {
+	font-family: "仿宋";
+	font-size: 22px;
+	height: 40px;
+	width: 300px;
+	border-radius:5px;
+}
+.center .input {
+	width: 480px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+.center .input p {
+	font-family: "仿宋";
+	font-size: 18px;
+	color: #666;
+	line-height: 35px;
+}
+.center .btn input {
+	font-family: "仿宋";
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: rgb(0, 161, 214);
+	height: 40px;
+	width: 150px;
+	border-radius:5px;
+}
+.center .btn {
+	width: 150px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	left: -50px;
+}
+.center .input .image_s1 {
+	display: none;
+	padding-left: 20px;
+	background-image: url(zhaohui_image/common_1.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	font-size: 14px;
+	height: 20px;
+	text-align: center;
+	padding-top:5px;
+}
+.jindu {
+	background-color: #f5f5f5;
+	height: 80px;
+}
+.jindu .jindu_1 {
+	width: 800px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	height: 80px;
+	text-align: center;
+}
+.jindu .jindu_1 .liebiao_all {
+	text-align: center;
+	padding-top: 14px;
+}
+.jindu .jindu_1 .liebiao_all li {
+	display: inline-block;
+}
+.jindu .jindu_1 .liebiao_all .liebiao_1 div {
+	float: left;
+	height: 34px;
+	width: 60px;
+	text-align: center;
+}
+.jindu .jindu_1 .liebiao_all .liebiao_2 div {
+	float: left;
+	height: 34px;
+	width: 75px;
+	text-align: center;
+}
+.jindu .jindu_1 .liebiao_all .liebiao_1 div i {
+	font-size: 14px;
+	font-style: normal;
+	color: #FFF;
+	background-image: url(zhaohui_image/common.png);
+	background-repeat: no-repeat;
+	background-position: 0px -404px;
+	text-align: center;
+	display: block;
+	height: 28px;
+	width: 28px;
+	line-height: 28px;
+	margin-top: 0px;
+	margin-left: 16px;
+}
+.jindu .jindu_1 .liebiao_all .liebiao_1 div p {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 700;
+	color: #a5a5a5;
+	display: block;
+	width: 60px;
+	margin-top: 28px;
+}
+.jindu .jindu_1 .liebiao_all .liebiao_1 i {
+	background-color: #ededed;
+	background-image: url(zhaohui_image/common.png);
+	background-repeat: no-repeat;
+	background-position: 0px -392px;
+	display: inline-block;
+	height: 2px;
+	width: 220px;
+	float: left;
+	margin-top: 12px;
+}
+.jindu .jindu_1 .liebiao_all .liebiao_2 div i {
+	font-size: 14px;
+	font-style: normal;
+	line-height: 28px;
+	color: #FFF;
+	background-image: url(zhaohui_image/common.png);
+	background-repeat: no-repeat;
+	background-position: 0px -442px;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+}
+.jindu .jindu_1 .liebiao_all .liebiao_2 div p {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 700;
+	color: #a5a5a5;
+	display: block;
+	text-align: center;
+}
+.bottom_infor {
+	font-family: "仿宋";
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+	color: #000;
+	background-color: #f6f9fa;
+	line-height: 35px;
+}
+.bottom_infor p {
+	text-align: center;
+}
+.center .input .mibao {
+	height: 40px;
+	width: 304px;
+	font-family: "仿宋";
+	font-size: 20px;
+	border-bottom-width: 0px;
+}
+</style>
+<script>
+function onBlur(obj){
+	if(obj.value==''){
+		obj.nextSibling.innerHTML='不能为空!';
+		obj.nextSibling.style.display='inline-block';	
+	}
+	else{
+		obj.nextSibling.style.display='none';	
+	}
+	
+}
+function onblur(obj){
+	var index=document.getElementById('mibao').value;
+	if(index=='请选择设置过的密保问题'){
+		obj.nextSibling.innerHTML='请选择密保问题!';
+		obj.nextSibling.style.display='inline-block';
+		obj.nextSibling.style.color='#F00';
+	}
+	else if(index!='请选择设置过的密保问题'){
+		if(obj.value==''){
+			obj.nextSibling.innerHTML='请填写密保答案!';
+			obj.nextSibling.style.display='inline-block';
+			obj.nextSibling.style.color='#F00';
+		}
+		else{
+			obj.nextSibling.style.display='none';
+		}
+	}
+	else{
+		obj.nextSibling.style.display='none';	
+	}	
+}
+function onFocus_id(obj){
+	obj.nextSibling.innerHTML='请填写账户!';
+	obj.nextSibling.style.display='inline-block';
+}
+function onFocus_da(obj){
+	var index=document.getElementById('mibao').value;
+	if(index!='请选择设置过的密保问题'){
+		if(obj.value==''){
+			obj.nextSibling.innerHTML='请填写密保答案!';
+			obj.nextSibling.style.display='inline-block';
+			obj.nextSibling.style.color='#F00';
+		}
+	}
+	else if(index=='请选择设置过的密保问题'){
+		obj.nextSibling.innerHTML='请选择密保问题!';
+		obj.nextSibling.style.display='inline-block';
+		obj.nextSibling.style.color='#F00';
+	}
+	else{
+		obj.nextSibling.style.display='none';	
+	}
+}
+</script>
+</head>
+<body>
+    <div class="top">
+          <div class="top_left">
+            <span class="image"><img src="zhaohui_image/logo.png" width="36" height="41" /></span>
+            <span class="left_text">安全中心 丨 重置密码</span>
+          </div>
+          <div class="top_right">
+              <a href="../index.php">登陆</a>
+      </div>
+</div>
+      <div class="jindu">
+      	<div class="jindu_1">
+            <ul class="liebiao_all">
+                <li class="liebiao_1">
+               	  <div>
+                  <i>1</i>
+                  <p>身份验证</p>
+                  </div>
+                  <i></i>
+                </li>
+                <li class="liebiao_2">
+                    <div>
+                    <i>2</i>
+                    <p>设置新密码</p>
+                    </div>
+                    <i></i>
+                </li>
+            </ul>
+        </div>
+      </div>
+    <form action="zhaohui_1.php" method="post" enctype="multipart/form-data" class="center">
+     <div class="input">
+   	   <p>请输入你的账户<span style="color: #F00;">(必填)</span></p>
+   	   <input type="text" name="Id" onblur="onBlur(this)" onfocus="onFocus_id(this)"/><span style="color:#F00;" class="image_s1"></span>
+        <p align="center" style="color:#000;">回答你之前设置过的密保问题</p>
+        <select name="mibao" class="mibao" id="mibao">
+        	<option  selected="selected">请选择设置过的密保问题</option>
+            <option value="我的名字是什么">我的名字是什么</option>
+            <option value="我的学号是多少">我的学号是多少？</option>
+            <option value="我的年龄是多少">我的年龄是多少？</option>
+            <option value="我的高中老师名字">我的高中老师名字？</option>
+            <option value="我的学历">我的学历？</option>
+        </select>
+        <input type="text" name="mibao_daan_a" onblur="onblur(this)" onfocus="onFocus_da(this)"/><span style="color:#F00;" class="image_s1"></span>
+     </div>
+     <div class="btn">
+        <input type="submit" name="zhaohui_1"  value="下一步"/>
+     </div>
+    </form>
+    <div class="bottom_infor">
+   	  <p>版权信息</p>
+        <p>Copyright © 2017 Network. All Rights Reserved. 网络16324 版权所有.</p>
+        <p><a href="#">网络公司</a> <a href="#">版权所有</a> <a href="#" >网络文化经营许可证</a></p>
+    </div>
+</body>
+</html>

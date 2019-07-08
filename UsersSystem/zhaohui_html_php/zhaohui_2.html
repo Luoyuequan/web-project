@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>找回密码</title>
+<style type="text/css">
+div,body,span,a,p,input,ul,li,form{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+.top {
+	height:90px;
+	background-color: #2f86f6;
+}
+.top .top_left {
+	float: left;
+	margin-top: 20px;
+	margin-left: 100px;
+	display: inline-block;
+	width: 240px;
+}
+.top .top_right {
+	float: right;
+	display: inline-block;
+	margin-right: 50px;
+	margin-top: 32px;
+	text-align: center;
+}
+.top .top_left .left_text {
+	margin-top: 10px;
+	margin-right: 0px;
+	display: block;
+	float: right;
+	font-family: "仿宋";
+	color: #FFF;
+	font-size: 18px;
+	font-weight: bold;
+}
+.top .top_left .image {
+	text-align: center;
+	display: block;
+	float: left;
+}
+.top .top_right a {
+	font-family: "仿宋";
+	font-size: 18px;
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+.top .top_right a:hover{
+	text-decoration:underline;
+	color:#F00;
+}
+.jindu {
+	background-color: #f5f5f5;
+	height: 80px;
+}
+.jindu .jindu_1 {
+	width: 800px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	height: 80px;
+	text-align: center;
+}
+.jindu .jindu_1 .liebiao_all {
+	text-align: center;
+	padding-top: 14px;
+}
+.jindu .jindu_1 .liebiao_all li {
+	display: inline-block;
+}
+.jindu .jindu_1 .liebiao_all .liebiao_1 div {
+	float: left;
+	height: 34px;
+	width: 60px;
+	text-align: center;
+}
+.jindu .jindu_1 .liebiao_all .liebiao_2 div {
+	float: left;
+	height: 34px;
+	width: 75px;
+	text-align: center;
+}
+.jindu .jindu_1 .liebiao_all .liebiao_1 div i {
+	font-size: 14px;
+	font-style: normal;
+	color: #FFF;
+	background-image: url(zhaohui_image/common.png);
+	background-repeat: no-repeat;
+	background-position: 0px -404px;
+	text-align: center;
+	display: block;
+	height: 28px;
+	width: 28px;
+	line-height: 28px;
+	margin-top: 0px;
+	margin-left: 16px;
+}
+.jindu .jindu_1 .liebiao_all .liebiao_1 div p {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 700;
+	color: #a5a5a5;
+	display: block;
+	width: 60px;
+	margin-top: 28px;
+}
+.jindu .jindu_1 .liebiao_all .liebiao_1 i {
+	background-color: #ededed;
+	background-image: url(zhaohui_image/common.png);
+	background-repeat: no-repeat;
+	background-position: 0px -392px;
+	display: inline-block;
+	height: 2px;
+	width: 220px;
+	float: left;
+	margin-top: 12px;
+}
+.jindu .jindu_1 .liebiao_all .liebiao_2 div i {
+	font-size: 14px;
+	font-style: normal;
+	line-height: 28px;
+	color: #FFF;
+	background-image: url(zhaohui_image/common.png);
+	background-repeat: no-repeat;
+	background-position: 0px -404px;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+}
+.jindu .jindu_1 .liebiao_all .liebiao_2 div p {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 700;
+	color: #a5a5a5;
+	display: block;
+	text-align: center;
+}
+.center_xg {
+	font-family: "仿宋";
+	width: 500px;
+	margin-top: 20px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+	padding-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.center_xg p {
+	font-size: 20px;
+	color: #666;
+	line-height: 30px;
+}
+.center_xg input {
+	font-family: "仿宋";
+	font-size: 22px;
+	display: inline-block;
+	height: 40px;
+	width: 300px;
+	border-radius:5px;
+}
+.center_chex {
+	font-family: "仿宋";
+	font-size: 16px;
+	width: 400px;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+.center_btn {
+	font-family: "仿宋";
+	font-size: 24px;
+	font-weight: bold;
+	width: 150px;
+	margin-top: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.center_btn #xiugai_d {
+	height: 40px;
+	width: 150px;
+	color: #FFF;
+	background-color: rgb(204,204,204);
+	font-size: 18px;
+	font-weight: bold;
+	border-radius:5px;
+}
+.bottom_infor {
+	font-family: "仿宋";
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+	color: #000;
+	background-color: #f6f9fa;
+	padding-top: 20px;
+}
+.bottom_infor p {
+	text-align: center;
+	font-size: 18px;
+	line-height: 30px;
+}
+.center_xg span {
+	font-size: 16px;
+	line-height: 25px;
+	color: #F00;
+	display: none;
+	height: 25px;
+	background-image: url(zhaohui_image/common_1.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 20px;
+	padding-top: 2px;
+}
+</style>
+</head>
+<script type="text/javascript">
+function onFocus_pd(obj){
+	obj.nextSibling.innerHTML="不能包含'|'";
+	obj.nextSibling.style.display='inline-block';
+}
+function onBlur(obj){
+	if(obj.value==''){
+		obj.nextSibling.innerHTML='不能为空!';
+		obj.nextSibling.style.display='inline-block';	
+	}
+	else{
+		obj.nextSibling.style.display='none';	
+	}
+}
+function onblur_pd(obj){
+	var passwd_1=document.getElementById('passwd').value;
+	var passwd_2=obj.value;
+	if(passwd_1!=''&passwd_2!=''){
+		if(passwd_1 != passwd_2){
+			obj.nextSibling.innerHTML='两次输入的密码不一致!';
+			obj.nextSibling.style.display='inline-block';
+			document.getElementById('passwd').style.backgroundColor='#ffbbba';
+			obj.style.backgroundColor='#ffbbba';
+		}
+		else{
+			obj.nextSibling.style.display='none';
+			document.getElementById('passwd').style.backgroundColor='';
+			obj.style.backgroundColor='';	
+		}
+	}
+	else{
+		obj.nextSibling.style.display='none';
+		document.getElementById('passwd').style.backgroundColor='';
+		obj.style.backgroundColor='';	
+	}
+}
+function Jinyong(obj){
+	if(obj.checked){
+		document.getElementById('xiugai_d').disabled='';
+		document.getElementById('xiugai_d').style.backgroundColor='#00a1d6';
+	}
+	else{
+		document.getElementById('xiugai_d').disabled='disabled';
+		document.getElementById('xiugai_d').style.backgroundColor='';
+	}
+}
+</script>
+<body>
+    <div class="top">
+        <div class="top_left">
+            <span class="image"><img src="zhaohui_image/logo.png" width="36" height="41" /></span>
+            <span class="left_text">安全中心 丨 重置密码</span>
+            </div>
+        <div class="top_right">
+        	<a href="../index.php">登陆</a>
+        </div>
+    </div>
+    <div class="jindu">
+        <div class="jindu_1">
+            <ul class="liebiao_all">
+                <li class="liebiao_1">
+                    <div>
+                        <i>1</i>
+                        <p>身份验证</p>
+                    </div>
+                    <i></i>
+                </li>
+                <li class="liebiao_2">
+                    <div>
+                        <i>2</i>
+                        <p>设置新密码</p>
+                    </div>
+                    <i></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <form action="zhaohui_2.php" method="post" enctype="multipart/form-data">
+      <div class="center_xg">
+          <p>请输入新密码</p>
+          <input name="Passwd_1" type="password" placeholder="请输入新密码" onfocus="onFocus_pd(this)" onblur="onBlur(this)" id="passwd"/><span></span>
+          <p>请再次输入新密码</p>
+          <input name="Passwd_2" type="password" placeholder="请再次输入新密码" onblur="onblur_pd(this)"/><span></span>
+      </div>
+      <div class="center_chex">
+    	<label><input name="" type="checkbox"/ onclick="Jinyong(this)">我已同意《哔哩哔哩弹幕网用户使用协议》和《哔哩哔哩弹幕网账号中心规范》</label>
+      </div>
+      <div class="center_btn">
+      		<input name="xiugai" type="submit"  value="确认"  disabled="disabled" id="xiugai_d"/>
+      </div>
+    </form>
+    <div class="bottom_infor">
+   	  <p>版权信息</p>
+        <p>Copyright © 2017 Network. All Rights Reserved. 网络16324 版权所有.</p>
+        <p><a href="#">网络公司</a> <a href="#">版权所有</a> <a href="#" >网络文化经营许可证</a></p>
+</div>
+</body>
+</html>

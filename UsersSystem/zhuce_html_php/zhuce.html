@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册中心</title>
+<style type="text/css">
+body,div,h2,input,a,label,form{
+	margin:0px;
+	padding:0px;
+}
+.top_logo {
+	background-image: url(./image_zhuce/rl_topbg.png);
+	background-repeat: repeat-x;
+	height: 106px;
+	width: 100%;
+}
+.top_logo .top_image {
+	background-image: url(./image_zhuce/rl_top.png);
+	background-repeat: no-repeat;
+	height: 106px;
+	width: 980px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.center {
+	width: 980px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #999;
+	border-radius:50px;
+}
+.center .center_title {
+	background-image: url(./image_zhuce/t1.png);
+	background-repeat: no-repeat;
+	height: 47px;
+	width: 120px;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.center .center_input {
+	width: 650px;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 10px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #999;
+}
+.center .center_input input{
+	display: inline-block;
+	height: 40px;
+	width: 300px;
+	font-family: "仿宋";
+	margin-top: 30px;
+	margin-left: 150px;
+	font-size: 20px;
+	border: 1px solid #CCC;
+	border-radius:5px;
+}
+.center .center_input span {
+	color: #F00;
+	display: none;
+	font-size: 16px;
+	padding-left: 20px;
+	background-image: url(../zhaohui_html_php/zhaohui_image/common_1.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	line-height: 25px;
+	height: 25px;
+}
+.center .center_btn {
+	width: 300px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+	position: relative;
+	left: -10px;
+}
+.center .center_btn input {
+	height: 40px;
+	width: 150px;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #CCCCCC;
+	font-family: "仿宋";
+	font-size: 18px;
+	color: #FFF;
+	border: 1px solid #CCC;
+	border-radius:5px;
+}
+.center .center_chex {
+	width: 300px;
+	font-family: "仿宋";
+	font-size: 16px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	color: #000;
+	position: relative;
+	left: -10px;
+}
+.bottom_infor {
+	font-family: "仿宋";
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+	color: #000;
+	background-color: #f6f9fa;
+}
+.bottom_infor p {
+	text-align: center;
+}
+.center .center_index a{
+	font-family: "仿宋";
+	font-size: 16px;
+	color: #000;
+	text-decoration: none;
+	margin-bottom: 5px;
+	width: 150px;
+	display: inline-block;
+}
+.center .center_index span{
+	font-family: "仿宋";
+	font-size: 16px;
+	color: #000;
+	margin-bottom: 5px;
+	margin-left:5px;
+	display: inline-block;
+}
+.center .center_index a:hover {
+	color: #F00;
+	text-decoration: underline;
+}
+.center .mibao_div {
+	width: 600px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "仿宋";
+	position: relative;
+	left: -25px;
+}
+.center .mibao_div .mibao {
+	font-size: 20px;
+	display: inline-block;
+	float: left;
+	height: 35px;
+	width: 200px;
+	margin-left: 150px;
+	border-radius: 5px;
+}
+.center .mibao_div input {
+	font-size: 20px;
+	width: 99px;
+	height: 33px;
+	border-left-width: 0px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+	border-radius: 5px;
+}
+#gundong{
+	font-family: "仿宋";
+	font-size: 18px;
+	color: #F00;
+	text-decoration: none;
+}
+#gundong:hover{
+	color:#00F;
+	text-decoration:underline;
+}
+#gundong {
+	width: 255px;
+	display: block;
+}
+.gundong {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	width: 1000px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.gundong marquee {
+	width: 1000px;
+}
+.center .shenfen {
+	width: 300px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	left: -10px;
+	font-family: "仿宋";
+	font-size: 20px;
+	line-height: 25px;
+	text-align: center;
+}
+.center .shenfen input {
+	margin-left: 10px;
+}
+</style>
+<script type="text/javascript">
+function onFocus_id(obj){
+	obj.nextSibling.innerHTML='只能由数字组成!';
+	obj.nextSibling.style.display='inline-block';
+}
+function onFocus_pd(obj){
+	obj.nextSibling.innerHTML="长度不能超于16位!";
+	obj.nextSibling.style.display='inline-block';
+}
+function onBlur(obj){
+	if(obj.value==''){
+		obj.nextSibling.innerHTML='不能为空!';
+		obj.nextSibling.style.display='inline-block';	
+	}
+	else{
+		obj.nextSibling.style.display='none';	
+	}
+}
+function onblur_pd(obj){
+	var passwd_1=document.getElementById('passwd').value;
+	var passwd_2=obj.value;
+	if(passwd_1 != passwd_2){
+		obj.nextSibling.innerHTML='两次输入的密码不一致!';
+		obj.nextSibling.style.display='inline-block';
+		document.getElementById('passwd').style.backgroundColor='#ffbbba';
+		obj.style.backgroundColor='#ffbbba';
+	}
+	else{
+		obj.nextSibling.style.display='none';
+		document.getElementById('passwd').style.backgroundColor='';
+		obj.style.backgroundColor='';	
+	}
+}
+function Jinyong(obj){
+	if(obj.checked){
+		document.getElementById('zhuce_d').disabled='';
+		document.getElementById('zhuce_d').style.backgroundColor='#00a1d6';
+	}
+	else{
+		document.getElementById('zhuce_d').disabled='disabled';
+		document.getElementById('zhuce_d').style.backgroundColor='';
+	}
+}
+function onblur_mibao(obj){
+	var index=document.getElementById('mibao').value;
+	if(index=='请选择密保问题'){
+		obj.nextSibling.innerHTML='请选择密保问题!';
+		obj.nextSibling.style.display='inline-block';
+		obj.nextSibling.style.color='#F00';
+	}
+	else if(index!='请选择密保问题'){
+		if(obj.value==''){
+			obj.nextSibling.innerHTML='请填写密保答案!';
+			obj.nextSibling.style.display='inline-block';
+			obj.nextSibling.style.color='#F00';
+		}
+		else{
+			obj.nextSibling.style.display='none';
+		}
+	}
+	else{
+		obj.nextSibling.style.display='none';	
+	}
+}
+function onfocus_mibao(obj){
+	var index=document.getElementById('mibao').value;
+	if(index!='请选择密保问题'){
+		if(obj.value==''){
+			obj.nextSibling.innerHTML='请填写密保答案!';
+			obj.nextSibling.style.display='inline-block';
+			obj.nextSibling.style.color='#F00';
+		}
+	}
+	else if(index=='请选择密保问题'){
+		obj.nextSibling.innerHTML='请选择密保问题!';
+		obj.nextSibling.style.display='inline-block';
+		obj.nextSibling.style.color='#F00';
+	}
+	else{
+		obj.nextSibling.style.display='none';	
+	}
+}
+</script>
+</head>
+
+<body onload="Gundong()">
+    <div class="top_logo">
+        <div class="top_image"></div>
+    </div>
+    <div class="gundong">
+    <marquee behavior="scroll" loop="-1" scrollamount="20" scrolldelay="1" width="1000">
+    特大惊喜!!最强七月番已上线!!
+    </marquee>
+    </div>
+    <form action="zhuce.php" method="post" enctype="multipart/form-data" class="center">
+   	  <h2 class="center_title"></h2>
+        <div class="center_input">
+          <input name="Id" type="text" placeholder="请输入账户" onfocus="onFocus_id(this)" onblur="onBlur(this)"/><span></span>
+          <input name="Passwd_1" type="password" placeholder="请输入密码" onfocus="onFocus_pd(this)" onblur="onBlur(this)" id="passwd"/><span></span>
+          <input name="Passwd_2" type="password" placeholder="请再次输入密码" onblur="onblur_pd(this)"/><span></span>
+        </div>
+      <div class="mibao_div">
+        	<select name="mibao" class="mibao" id="mibao">
+            <option  selected="selected">请选择密保问题</option>
+            <option value="我的名字是什么">我的名字是什么</option>
+            <option value="我的学号是多少">我的学号是多少？</option>
+            <option value="我的年龄是多少">我的年龄是多少？</option>
+            <option value="我的高中老师名字">我的高中老师名字？</option>
+            <option value="我的学历">我的学历？</option>
+            </select>
+            <input type="text" name="mibao_daan"  onblur="onblur_mibao(this)" onfocus="onfocus_mibao(this)"/><span></span>
+        </div>
+        <div class="shenfen">
+        <input name="shenfen" type="radio" value="游客" checked="checked" />游客<input name="shenfen" type="radio" disabled="disabled" value="管理员" />管理员
+      </div>
+		<div class="center_chex">
+    	<label><input name="" type="checkbox" onclick="Jinyong(this)"/>我已同意《哔哩哔哩弹幕网用户使用协议》和《哔哩哔哩弹幕网账号中心规范》</label>
+        </div>
+		<div class="center_btn">
+      		<input name="zhuce" type="submit"  value="注册"  disabled="disabled" id="zhuce_d"/>
+        </div>
+      	<div class="center_index">
+        	<span>已有账号？</span><a href="../index.php">立即登录>></a>
+        </div>
+    </form>
+    <div class="bottom_infor">
+   	  <p>版权信息</p>
+        <p>Copyright © 2017 Network. All Rights Reserved. 网络16324 版权所有.</p>
+        <p><a href="#">网络公司</a> <a href="#">版权所有</a> <a href="#" >网络文化经营许可证</a></p>
+    </div>
+</body>
+</html>
